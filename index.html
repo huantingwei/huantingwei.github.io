@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <title>huanting_wei.io</title>
+    <style>
+        body { 
+            font-family: Courier New, Courier, monospace;
+            padding-top: 50px;
+            columns: #373737;
+         }
+        h1{
+            font-size:5em;
+            font-weight:600;
+            margin: 2.5em 4em 2.8em;     
+        }
+        h2{
+            font-size:54px;  
+        }
+        h3{
+            font-size:30px;
+        }
+        h4{
+            font-size:24px;
+        }
+        .title{
+            margin: 1em 4em 1em;
+            font-weight:500;
+        }
+        hr {
+        margin: 35px 50px 35px;
+        border-color: #727878;
+        height:1px; 
+        opacity: 0.2;
+        filter: alpha(opacity=20);
+        }
+        .container{
+            margin-bottom: 3em;
+        }
+        .container-last{
+            margin-bottom: 0em;
+        }
+        .bg-home { 
+            background-image:url('/b-cloud.jpg');
+            color:#fafafa;
+            padding:25em;
+            height:100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            opacity:0.5;
+        }
+        @media only screen and (max-device-width: 1024px) {
+        .parallax {
+            background-attachment: scroll;
+            }
+        }
+        .bg-profile{
+            background-color:#f1f1e3;
+            padding-bottom: 4em;
+        }
+        .bg-experience{
+            color:#373737;
+        }
+        .bg-blog{
+            background-color:#f1f1e3;
+        }
+        .bg-contact{
+            background-color: #062F4F;
+            color:#F4F4F4;
+        }
+        .navbar{
+        margin-bottom: 0;
+        opacity:0.98;
+        z-index: 9999;
+        border: 0;
+        font-size: 12px ;
+        letter-spacing: 4px;
+        border-radius: 0;
+        font-family: Montserrat, sans-serif;
+        color:#f1f1e3;
+        background-color:rgb(6, 61, 104);
+        }
+        ul{
+            list-style: none;
+        }
+        ul li.contact{
+            margin:2em;
+            color:#F4F4F4;
+        }
+        i{
+            font-size:30px;
+            margin:1.5em;
+        }
+        .intro{
+            padding:5%;
+        }
+        .experience-title{
+            font-size:1.4em;
+            font-weight:bold;
+        }
+        .experience-period{
+            font-size:1em;            
+        }
+        .experience-job{
+            font-size:1.2em;
+        }
+        .experience-type{
+            color:rgb(6, 61, 104);
+            font-weight:bold;
+        }
+        .info{
+            font-size:1.2em;
+        }
+        a:hover{
+            color:#F4F4F4;
+        }
+        p.info a:hover{
+            color:#062F4F;
+            text-decoration: none;
+        }
+        nav.navbar ul.nav li a:hover{
+            color:#f4f4f4;
+        }
+        img{
+            max-width: 30%;
+            height:auto;
+            border:1px solid #f4f4f4;
+        }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class='navbar navbar-default navbar-fixed-top'>
+        <div class='container-fluid'>
+			<div class="navbar-header">
+                <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>				
+            </div>			
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class='nav navbar-nav'>
+                    <li><a href='#home'>Home</a></li>
+                    <li><a href='#profile'>Profile</a></li>
+                    <li><a href='#experience'>Experience</a></li>
+                    <li><a href='#blog'>Blog</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                    <!--<button type="button" class="btn btn-info navbar-btn">Sign in</button>-->
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div class='container-fluid intro bg-home'id='home'>
+        <h1>Jamie Wei</h1>
+        <p>If A is success in life, then A equals x plus y plus z. Work is x; y is play; and z is keeping your mouth shut.</p>        
+    </div>
+    <div class='bg-profile'>    
+        <div class='container text-center' id='profile'>
+            <div class='row'>
+                <br><br>
+                <h2 class='title'>Profile</h2> 
+                <p class='lead'>We are just dots on a giant spectrum</p>
+                <hr>   
+            </div>
+            <!--<div class='row'><img src='p-guitar.jpg' alt='profile-img'></div>-->
+            <div class='row'>
+                <div class='col-md-6 text-left'>
+                    <h3 style='text-align:center;'>Info</h3>
+                    <p class='info'>
+                    <strong>Name</strong>         
+                    Wei Huan Ting <br><br>       
+                    <strong>Location</strong>         
+                    Hong Kong / Taipei, Taiwan <br><br>
+                    <strong>Current Obsession</strong>
+                    <a>Workout</a>
+                    <a>Guitar</a>
+                    <a>Novel</a>
+                    <a>LGBT</a> <!--照片連結-->
+                    </p>        
+                </div>
+                <div class='col-md-6 text-left'>
+                    <h3 style='text-align:center;'>Spectrum</h3>
+                    <p>I am a student learning web developing.</p>
+                    <p>This is my first website. I'm trying to put it online.</p>
+                    <p>But I have to finish it first.   </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='bg-experience'>
+        <div class='container-fluid text-center' id='experience'><h2 class='title'>Experience</h2></div>
+        <div class='container text-center'id='experience'>
+        <div class='row'>
+        <div class='row'>
+            <h3 class='experience-type'>Education</h3>
+            <div class='col-sm-6'>Organization</div>
+            <div class='col-sm-6'>Degree Achieved</div>
+            <hr>
+        </div>
+            <div class='col-md-6'>
+                <p class='experience-title'>The Hong Kong University of Science and Technology</p>
+                <p class='experience-period'>2017-Present</p>
+            </div>
+            <div class='col-md-6'>
+                <p class='experience-job'>University<p>
+            </div>
+        </div>
+
+        <br>
+
+        <div class='row'>
+            <div class='col-md-6'>
+                <p class='experience-title'>Taipei First Girls High School</p>
+                <p class='experience-period'>2014-2017</p>
+            </div>
+            <div class='col-md-6'>
+                <p class='experience-job'>High School</p>
+            </div>
+        </div>
+
+        <br>
+        <div class='row'>
+            <h3 class='experience-type'>Work/Internship</h3>
+            <div class='col-sm-6'>Organization</div>
+            <div class='col-sm-6'>Position</div>
+            <hr>    
+        </div>
+    
+        <div class='row'>
+            <div class='col-md-6'>
+                <p class='experience-title'>giftVIVA</p>
+                <p class='experience-period'>2017-Present</p>
+            </div>
+            <div class='col-md-6'>
+                <p class='experience-job'>Software Engineer<p>
+            </div>
+        </div>
+        <br>
+        <div class='row'>
+            <div class='col-md-6'>
+                <p class='experience-title'>Hong Kong Taiwanese Student Association</p>
+                <p class='experience-period'>2017-Present</p>
+            </div>
+            <div class='col-md-6'>
+                <p class='experience-job'>Activity Manager</p>
+            </div>
+        </div>
+        <br>
+        <div class='row'>
+                <div class='col-md-6'>
+                    <p class='experience-title'>HKUST Taiwanese Students Association</p>
+                    <p class='experience-period'>2017-Present</p>
+                </div>
+                <div class='col-md-6'>
+                    <p class='experience-job'>IT Manager</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <!--
+    <div class='bg-blog'>
+        <div class='container-fluid text-center' id='blog'>
+            <h2 class='title'>Blog</h2>
+        </div>
+        <div class='container text-center'id='blog'>
+            <div class='row'>
+            <hr>
+            <div class='col-sm-4'>
+                <div class='panel panel-info'>
+                    <div class='panel-heading'>Title</div>
+                    <div class='panel-body'>Content</div>
+                </div>
+            </div>
+            <div class='col-sm-4'>
+                    <h4>Title</h4>
+                    <p>Content</p>
+                    <h4>Title</h4>
+                    <p>Content</p>
+                    <h4>Title</h4>
+                    <p>Content</p>
+            </div>
+            <div class='col-sm-4'>
+                <div class='thumbnail'>hello</div>
+            </div>
+        </div>
+        </div>
+    </div>
+-->
+    <div class='bg-contact'>
+        <div class='container-fluid text-center'id='contact'>
+            <h2 class='title'>Contact</h2>
+        </div>
+        <div class='container text-center container-last 'id='contact'>
+            <div class='row'>
+            <hr style='margin:0em 1em 0.5em;'>
+            <div class='col-md-6'>
+                <ul>
+                    <li class='contact'><span class='fa fa-envelope icon'>           </span>
+                        <a href='ting02940@gmail.com'><span>ting02940@gmail.com</span></a></li>
+                    <li class='contact'><span class='fa fa-mobile icon'>         </span>
+                        <a href=''>+852 60974126</a><span> / </span><a href=''>+886 958394958</a></li>
+                </ul>
+            </div>
+            <div class='col-md-6'>
+                <ul>
+                    <li class='contact'><a href='https://www.linkedin.com/in/jamie-wei-01826a151/'>
+                        <span class='fa fa-linkedin icon' style='padding-right:0.5em;'></span>
+                        https://www.linkedin.com/in/jamie-wei-01826a151/
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+        </div>    
+        </div>
+    </div>
+  </body>
+</html>
