@@ -6,6 +6,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -20,7 +21,7 @@
         h1{
             font-size:5em;
             font-weight:600;
-            margin: 2.5em 4em 2.8em;     
+            margin: 3em 2em 2.8em;     
         }
         h2{
             font-size:54px;  
@@ -32,7 +33,7 @@
             font-size:24px;
         }
         .title{
-            margin: 1em 4em 1em;
+            margin: 1em 2em 1em;
             font-weight:500;
         }
         hr {
@@ -49,7 +50,7 @@
             margin-bottom: 0em;
         }
         .bg-home { 
-            background-image:url('/b-cloud.JPG');
+            background-image:url('b-cloud.JPG');
             color:#fafafa;
             padding:25em;
             height:100%;
@@ -81,7 +82,7 @@
         }
         .navbar{
         margin-bottom: 0;
-        opacity:0.98;
+        opacity:0.85;
         z-index: 9999;
         border: 0;
         font-size: 12px ;
@@ -105,19 +106,26 @@
         .intro{
             padding:5%;
         }
-        .experience-title{
-            font-size:1.4em;
+        .exp-title{
+            font-size:22px;
             font-weight:bold;
         }
-        .experience-period{
-            font-size:1em;            
+        .exp-period{
+            font-size:14px;            
         }
-        .experience-job{
-            font-size:1.2em;
+        .exp-job{
+            font-size:18px;
         }
-        .experience-type{
+        .exp-type{
             color:rgb(6, 61, 104);
             font-weight:bold;
+            margin-left: 1.8em;
+        }
+        .exp-pic{
+            margin-left:7em;
+        }
+        .exp-location{
+            font-size:14px;
         }
         .info{
             font-size:1.2em;
@@ -132,10 +140,8 @@
         nav.navbar ul.nav li a:hover{
             color:#f4f4f4;
         }
-        img{
-            max-width: 30%;
-            height:auto;
-            border:1px solid #f4f4f4;
+        .bg-contact ul li.contact a{
+            color:#f1f1e3;
         }
     </style>
   </head>
@@ -143,19 +149,19 @@
     <nav class='navbar navbar-default navbar-fixed-top'>
         <div class='container-fluid'>
 			<div class="navbar-header">
-                <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>				
             </div>			
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse navbar" id='mynav'>
                 <ul class='nav navbar-nav'>
                     <li><a href='#home'>Home</a></li>
                     <li><a href='#profile'>Profile</a></li>
                     <li><a href='#experience'>Experience</a></li>
-                    <li><a href='#blog'>Blog</a></li>
+                    <!--<li><a href='#blog'>Blog</a></li>-->
                     <li><a href='#contact'>Contact</a></li>
                     <!--<button type="button" class="btn btn-info navbar-btn">Sign in</button>-->
                 </ul>
@@ -167,7 +173,7 @@
         <h1>Jamie Wei</h1>
         <p>If A is success in life, then A equals x plus y plus z. Work is x; y is play; and z is keeping your mouth shut.</p>        
     </div>
-    <div class='bg-profile'>    
+    <div class='bg-profile intro'>    
         <div class='container text-center' id='profile'>
             <div class='row'>
                 <br><br>
@@ -200,74 +206,103 @@
             </div>
         </div>
     </div>
-    <div class='bg-experience'>
+    <div class='bg-experience intro' id='experience'>
         <div class='container-fluid text-center' id='experience'><h2 class='title'>Experience</h2></div>
-        <div class='container text-center'id='experience'>
-        <div class='row'>
-        <div class='row'>
-            <h3 class='experience-type'>Education</h3>
-            <div class='col-sm-6'>Organization</div>
-            <div class='col-sm-6'>Degree Achieved</div>
-            <hr>
-        </div>
-            <div class='col-md-6'>
-                <p class='experience-title'>The Hong Kong University of Science and Technology</p>
-                <p class='experience-period'>2017-Present</p>
+        <div class='container'id='experience'>
+            <div class='row'>
+            <div class='row'>
+                <h3 class='exp-type'>Education</h3>
+                <hr>
             </div>
-            <div class='col-md-6'>
-                <p class='experience-job'>University<p>
+                <div class='col-md-4' >
+                <a href='http://www.ust.hk/'>
+                    <img src='hkust.jpg' alt='hkust' class='exp-pic img-rounded' width=50% height=50%>
+                    </a>
             </div>
-        </div>
-
-        <br>
-
-        <div class='row'>
-            <div class='col-md-6'>
-                <p class='experience-title'>Taipei First Girls High School</p>
-                <p class='experience-period'>2014-2017</p>
-            </div>
-            <div class='col-md-6'>
-                <p class='experience-job'>High School</p>
+                <div class='col-md-8'>
+                <p class='exp-title'>The Hong Kong University of Science and Technology</p>
+                <p class='exp-job'>Year 1 / School of Engineering<p></p>
+                <p class='exp-period'>2017-Present</p>
+                <p class='exp-location'>
+                    <span class='fa fa-location-arrow'style='margin-right:8px;color:#0052cc;'></span>
+                    Hong Kong</p>             
+                    
             </div>
         </div>
 
-        <br>
+        <br><br>
+            
         <div class='row'>
-            <h3 class='experience-type'>Work/Internship</h3>
-            <div class='col-sm-6'>Organization</div>
-            <div class='col-sm-6'>Position</div>
+            <div class='col-md-4'>
+                <a href='https://sprout.tw/spt/'>
+                    <img src='sprout.jpg' alt='sprout' class='exp-pic img-rounded'width=50% height=50%>
+                </a>
+            </div>
+            <div class='col-md-8'>
+                <br>
+                <p class='exp-title'>Sprout Program -<br> Department of Computer Science and Information Engineering, National Taiwan University</p>
+                <p class='exp-job'>Python Graduate</p>
+                <p class='exp-period'>2014-2015</p>
+                <p class='exp-location'><span class='fa fa-location-arrow'style='margin-right:8px;color:#0052cc;'></span>
+                    Taipei, Taiwan</p>
+                
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+        
+        <div class='row'>
+            <h3 class='exp-type'>Work/Internship</h3>
             <hr>    
         </div>
-    
         <div class='row'>
-            <div class='col-md-6'>
-                <p class='experience-title'>giftVIVA</p>
-                <p class='experience-period'>2017-Present</p>
-            </div>
-            <div class='col-md-6'>
-                <p class='experience-job'>Software Engineer<p>
-            </div>
-        </div>
-        <br>
-        <div class='row'>
-            <div class='col-md-6'>
-                <p class='experience-title'>Hong Kong Taiwanese Student Association</p>
-                <p class='experience-period'>2017-Present</p>
-            </div>
-            <div class='col-md-6'>
-                <p class='experience-job'>Activity Manager</p>
-            </div>
-        </div>
-        <br>
-        <div class='row'>
-                <div class='col-md-6'>
-                    <p class='experience-title'>HKUST Taiwanese Students Association</p>
-                    <p class='experience-period'>2017-Present</p>
+                <div class='col-md-4'>
+                    <a href='https://www.giftviva.com/'>
+                        <img src='giftviva.png' alt='giftviva' class='exp-pic img-rounded'width=50% height=50%>
+                    </a>
                 </div>
-                <div class='col-md-6'>
-                    <p class='experience-job'>IT Manager</p>
+                <div class='col-md-8'>
+                    <br>
+                    <p class='exp-title'>giftVIVA </p>
+                    <p class='exp-job'>Software Engineer</p>
+                    <p class='exp-period'>2017-Present</p>
+                    <p class='exp-location'><span class='fa fa-location-arrow'style='margin-right:8px;color:#0052cc;'></span>
+                        Hong Kong</p>             
                 </div>
-            </div>
+        </div>    
+        <br><br>
+        <div class='row'>
+                <div class='col-md-4'>
+                    <a href='https://www.facebook.com/roc.hktsa/'>
+                        <img src='hktsa.jpg' alt='hktsa' class='exp-pic img-rounded'width=50% height=50%>
+                    </a>
+                </div>
+                <div class='col-md-8'>
+                    <br>
+                    <p class='exp-title'>Hong Kong Taiwanese Student Association</p>
+                    <p class='exp-job'>Activity Manager</p>
+                    <p class='exp-period'>2017-Present</p>
+                    <p class='exp-location'><span class='fa fa-location-arrow'style='margin-right:8px;color:#0052cc;'></span>
+                        Hong Kong</p>            
+                </div>
+        </div> 
+        <br><br><br>
+        <div class='row'>
+                <div class='col-md-4'>
+                    <a href='https://tsa.su.ust.hk'>
+                        <img src='hkusttsa.jpg' alt='hkusttsa' class='exp-pic img-rounded'width=50% height=50%>
+                    </a>
+                </div>
+                <div class='col-md-8'>
+                    <br>
+                    <p class='exp-title'>HKUST Taiwanese Students Association</p>
+                    <p class='exp-job'>IT Manager</p>
+                    <p class='exp-period'>2017-Present</p>
+                    <p class='exp-location'><span class='fa fa-location-arrow'style='margin-right:8px;color:#0052cc;'></span>
+                        Hong Kong</p>
+                </div>
+        </div> 
         </div>
     </div>
 
@@ -277,7 +312,7 @@
         <div class='container-fluid text-center' id='blog'>
             <h2 class='title'>Blog</h2>
         </div>
-        <div class='container text-center'id='blog'>
+        <div class='container text-center' id='blog'>
             <div class='row'>
             <hr>
             <div class='col-sm-4'>
@@ -300,12 +335,12 @@
         </div>
         </div>
     </div>
--->
+    -->
     <div class='bg-contact'>
         <div class='container-fluid text-center'id='contact'>
             <h2 class='title'>Contact</h2>
         </div>
-        <div class='container text-center container-last 'id='contact'>
+        <div class='container text-center container-last'id='contact'>
             <div class='row'>
             <hr style='margin:0em 1em 0.5em;'>
             <div class='col-md-6'>
@@ -322,6 +357,10 @@
                         <span class='fa fa-linkedin icon' style='padding-right:0.5em;'></span>
                         https://www.linkedin.com/in/jamie-wei-01826a151/
                         </a>
+                    </li>
+                    <li class='contact'><a href='https://www.facebook.com/huanting.wei'>
+                        <span class='fa fa-facebook icon' style='padding-right:0.5em;'></span>
+                        https://www.facebook.com/huanting.wei</a>
                     </li> 
                 </ul>
             </div>
