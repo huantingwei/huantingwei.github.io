@@ -9,7 +9,21 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <script>
+    function check()
+    {
+        if(comment.name.value==''){
+            alert("Please tell me your name.");
+            comment.name.focus();
+            return false;
+        }
+        else if(comment.content.value==''){
+            alert("Tell me anything!");
+            comment.content.focus();
+            return false;
+        }
+    }
+    </script>
 
     <title>huanting_wei.io</title>
     <style>
@@ -144,6 +158,10 @@
             color:#f1f1e3;
         }
         .profile-img:hover{opacity:0.9}
+        textarea{
+            color:#08233a;
+            resize:none;
+        }
     </style>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -209,11 +227,12 @@
                 </div>
                 <div class='col-md-4 text-left'>
                     <h3 style='text-align:center;'>About me</h3>
-                    <p>I am learning web developing. It's fun.</p>
-                    <p>This is my first website. I still have so many to learn. I appreciate every piece of advice from all of you.</p>
+                    <p>I am learning web developing, and this is my personal website.</p>
+                    <p>I still have so many to learn. </p>
+                    <p>I appreciate every piece of advice from all of you.</p>
                     <p>Feel free to leave a message or email me.</p>
-                    <p>I want to <strong>help people in need</strong>, <br><strong>protect the environment</strong>.</p>
-                    <p>I know it sounds empty, but it is my dream</p>
+                    <!--<p>I want to <strong>help people in need</strong>, <br><strong>protect the environment</strong>.</p>
+                    <p>I know it sounds empty, but it is my dream</p>-->
                 </div>
             </div>
         </div>
@@ -352,15 +371,15 @@
         <div class='container-fluid text-center'id='contact'>
             <h2 class='title'>Contact</h2>
         </div>
-        <div class='container container-last text-center'id='contact'>
+        <div class='container  text-center'id='contact'>
             <div class='row'>
             <hr style='margin:0em 1em 0.5em;'>
             <div class='col-md-6'>
                 <ul>
                     <li class='contact'><span class='fa fa-envelope icon'>           </span>
-                        <a href='ting02940@gmail.com'><span>ting02940@gmail.com</span></a></li>
+                        <a href='mailto:ting02940@gmail.com'><span>ting02940@gmail.com</span></a></li>
                     <li class='contact'><span class='fa fa-mobile icon'>         </span>
-                        <a href=''>+852 60974126</a><span> / </span><a href=''>+886 958394958</a></li>
+                        <a href=''>+852 60974126 (Hong Kong)</a><span> / </span><a href=''>+886 958394958 (Taiwan)</a></li>
                 </ul>
             </div>
             <div class='col-md-6'>
@@ -378,11 +397,49 @@
             </div>
         </div>    
         </div>
-        <!--<div class='row'>
-            <h4>Comment</h4>
-            <textarea rows='5' placeholder="Tell me anything"></textarea>
-            <input type='submit'>
-        </div>-->
+        <div class='container container-last text-center' >
+            <h4>Share with me</h4>
+            <!--<form method="POST" action="mailto:ting02940@gmail.com?SUBJECT=Questions for Jamie" enctype="text/plain">
+                <input type='text' maxlength="50" name='Name' style='color:#062F4F'></input>
+                <br><br>
+                <textarea rows='5'cols='100' placeholder="Tell me anything" id='comment'></textarea>
+                <input type='submit'style='background-color:#0b3457'>Submit
+            </form>
+            <br><br>
+            <textarea rows='5'cols='100' placeholder="Tell me anything"></textarea>
+            <br>
+            <span style='margin-right:10px'>How May I Call You?</span>
+            <textarea rows='1' cols='15' id='name' style='margin-top:10px;'></textarea>
+            <br><br>
+            <button style='background-color:#0b3457' onclick='loadDoc()'type='submit'>Submit</button>
+            <hr>-->
+
+
+            <form method='POST' action='/addmessage.php'name='comment'onsubmit='return check();'>
+                Name: <input type='text' size='20' name='name'><br><br>
+                Comment: <br><textarea name='content' rows='5'cols='100' placeholder="Tell me anything"></textarea><br>
+                <input type='submit' value='Submit'name='submit'style='background-color:#0b3457'>
+            </form>
+            <br><br>
+        </div>
+        
     </div>
+
   </body>
 </html>
+    <!--<script>
+    function loadDoc(){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function(){
+            if(this.readyState==4&&this.status==200){
+                document.getElementById('document').innerHTML = this.responseText;
+            }
+        };
+        xhttp.open('GET',"/text.txt",true);
+        xhttp.send();
+    }
+    </script>-->
+<!--
+    submit_comment()/js
+    php/database
+-->
