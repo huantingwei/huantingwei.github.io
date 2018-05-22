@@ -1,0 +1,135 @@
+        body { 
+            font-family: Courier New, Courier, monospace;
+            padding-top: 50px;
+            columns: #373737;
+         }
+        h1{
+            font-size:5em;
+            font-weight:600;
+            margin: 3em 2em 2.8em;     
+        }
+        h2{
+            font-size:54px;  
+        }
+        h3{
+            font-size:30px;
+        }
+        h4{
+            font-size:24px;
+        }
+        .title{
+            margin: 1em 2em 1em;
+            font-weight:500;
+        }
+        hr {
+        margin: 35px 50px 35px;
+        border-color: #727878;
+        height:1px; 
+        opacity: 0.2;
+        filter: alpha(opacity=20);
+        }
+        .container{
+            margin-bottom: 3em;
+        }
+        .container-last{
+            margin-bottom: 0em;
+        }
+        .bg-home { 
+            background-image:url('/image/b-sunrise.JPG');
+            color:#fafafa;
+            padding:25em;
+            height:100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            opacity:0.7;
+        }
+        @media only screen and (max-device-width: 1024px) {
+        .parallax {
+            background-attachment: scroll;
+            }
+        }
+        .bg-profile{
+            background-color:#f1f1e3;
+            padding-bottom: 4em;
+        }
+        .bg-experience{
+            color:#373737;
+        }
+        .bg-blog{
+            background-color:#f1f1e3;
+        }
+        .bg-contact{
+            background-color: #062F4F;
+            color:#F4F4F4;
+        }
+        .navbar{
+        margin-bottom: 0;
+        opacity:0.85;
+        z-index: 9999;
+        border: 0;
+        font-size: 12px ;
+        letter-spacing: 4px;
+        border-radius: 0;
+        font-family: Montserrat, sans-serif;
+        color:#f1f1e3;
+        background-color:rgb(6, 61, 104);
+        }
+        ul{
+            list-style: none;
+        }
+        ul li.contact{
+            margin:2em;
+            color:#F4F4F4;
+        }
+        i{
+            font-size:30px;
+            margin:1.5em;
+        }
+        .intro{
+            padding:5%;
+        }
+        .exp-title{
+            font-size:22px;
+            font-weight:bold;
+        }
+        .exp-period{
+            font-size:14px;            
+        }
+        .exp-job{
+            font-size:18px;
+        }
+        .exp-type{
+            color:rgb(6, 61, 104);
+            font-weight:bold;
+            margin-left: 1.8em;
+        }
+        .exp-pic{
+            margin-left:7em;
+        }
+        .exp-location{
+            font-size:14px;
+        }
+        .info{
+            font-size:1.2em;
+        }
+        a:hover{
+            color:#F4F4F4;
+        }
+        p.info a:hover{
+            color:#062F4F;
+            text-decoration: none;
+        }
+        nav.navbar ul.nav li a:hover{
+            color:#f4f4f4;
+        }
+        .bg-contact ul li.contact a{
+            color:#f1f1e3;
+        }
+        .profile-img:hover{opacity:0.9}
+        textarea{
+            color:#08233a;
+            resize:none;
+        }

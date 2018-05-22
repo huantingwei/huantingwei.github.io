@@ -9,160 +9,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-    function check()
-    {
-        if(comment.name.value==''){
-            alert("Please tell me your name.");
-            comment.name.focus();
-            return false;
-        }
-        else if(comment.content.value==''){
-            alert("Tell me anything!");
-            comment.content.focus();
-            return false;
-        }
-    }
-    </script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
+    <link rel="stylesheet" href="style.css">
     <title>huanting_wei.io</title>
-    <style>
-        body { 
-            font-family: Courier New, Courier, monospace;
-            padding-top: 50px;
-            columns: #373737;
-         }
-        h1{
-            font-size:5em;
-            font-weight:600;
-            margin: 3em 2em 2.8em;     
-        }
-        h2{
-            font-size:54px;  
-        }
-        h3{
-            font-size:30px;
-        }
-        h4{
-            font-size:24px;
-        }
-        .title{
-            margin: 1em 2em 1em;
-            font-weight:500;
-        }
-        hr {
-        margin: 35px 50px 35px;
-        border-color: #727878;
-        height:1px; 
-        opacity: 0.2;
-        filter: alpha(opacity=20);
-        }
-        .container{
-            margin-bottom: 3em;
-        }
-        .container-last{
-            margin-bottom: 0em;
-        }
-        .bg-home { 
-            background-image:url('b-cloud.JPG');
-            color:#fafafa;
-            padding:25em;
-            height:100%;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            text-align: center;
-            opacity:0.5;
-        }
-        @media only screen and (max-device-width: 1024px) {
-        .parallax {
-            background-attachment: scroll;
-            }
-        }
-        .bg-profile{
-            background-color:#f1f1e3;
-            padding-bottom: 4em;
-        }
-        .bg-experience{
-            color:#373737;
-        }
-        .bg-blog{
-            background-color:#f1f1e3;
-        }
-        .bg-contact{
-            background-color: #062F4F;
-            color:#F4F4F4;
-        }
-        .navbar{
-        margin-bottom: 0;
-        opacity:0.85;
-        z-index: 9999;
-        border: 0;
-        font-size: 12px ;
-        letter-spacing: 4px;
-        border-radius: 0;
-        font-family: Montserrat, sans-serif;
-        color:#f1f1e3;
-        background-color:rgb(6, 61, 104);
-        }
-        ul{
-            list-style: none;
-        }
-        ul li.contact{
-            margin:2em;
-            color:#F4F4F4;
-        }
-        i{
-            font-size:30px;
-            margin:1.5em;
-        }
-        .intro{
-            padding:5%;
-        }
-        .exp-title{
-            font-size:22px;
-            font-weight:bold;
-        }
-        .exp-period{
-            font-size:14px;            
-        }
-        .exp-job{
-            font-size:18px;
-        }
-        .exp-type{
-            color:rgb(6, 61, 104);
-            font-weight:bold;
-            margin-left: 1.8em;
-        }
-        .exp-pic{
-            margin-left:7em;
-        }
-        .exp-location{
-            font-size:14px;
-        }
-        .info{
-            font-size:1.2em;
-        }
-        a:hover{
-            color:#F4F4F4;
-        }
-        p.info a:hover{
-            color:#062F4F;
-            text-decoration: none;
-        }
-        nav.navbar ul.nav li a:hover{
-            color:#f4f4f4;
-        }
-        .bg-contact ul li.contact a{
-            color:#f1f1e3;
-        }
-        .profile-img:hover{opacity:0.9}
-        textarea{
-            color:#08233a;
-            resize:none;
-        }
-    </style>
+    
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav class='navbar navbar-default navbar-fixed-top'>
@@ -180,13 +31,10 @@
                     <li><a href='#home'>Home</a></li>
                     <li><a href='#profile'>Profile</a></li>
                     <li><a href='#experience'>Experience</a></li>
-                    <!--<li><a href='#blog'>Blog</a></li>-->
                     <li><a href='#contact'>Contact</a></li>
-                    <!--<button type="button" class="btn btn-info navbar-btn">Sign in</button>-->
                 </ul>
             </div>
         </div>
-
     </nav>
     <div class='container-fluid intro bg-home'id='home'>
         <h1>Jamie Wei</h1>
@@ -201,7 +49,6 @@
                 <p class='lead'>Life's beauty is inseperable from its fragility.</p>
                 <hr>   
             </div>
-            <!--<div class='row'><img src='p-guitar.jpg' alt='profile-img'></div>-->
             <div class='row'>
                 <div class='col-md-4 text-left'>
                     <h3 style='text-align:center;'>Info</h3>
@@ -211,15 +58,15 @@
                     <strong>Location</strong>         
                     Hong Kong / Taipei, Taiwan <br><br>
                     <strong>Current Obsession</strong><br>
-                    <a>Workout</a>
-                    <a>Basketball</a>
-                    <a>Guitar</a>
-                    <a>LGBT</a> <!--照片連結-->
+                    <a>Environment   |</a>    
+                    <a>Social Innovation</a><br>
+                    <a>LGBTQ   |</a>
+                    <a>Sports & Music</a> 
                     </p>        
                 </div>
                 <div class='col-md-4'>
                     <br><br>
-                    <img src='/image/profile.JPG' alt='profile-img' class='img-rounded profile-img'width=50% height=50%>
+                    <img src='/image/profile.jpg' alt='profile-img' class='img-rounded profile-img'width=50% height=50%>
                     <div class='row'>
                         <br>
                         <span style="font-size:18px">Jamie</span>
@@ -227,12 +74,10 @@
                 </div>
                 <div class='col-md-4 text-left'>
                     <h3 style='text-align:center;'>About me</h3>
-                    <p>I am learning web developing, and this is my personal website.</p>
-                    <p>I still have so many to learn. </p>
-                    <p>I appreciate every piece of advice from all of you.</p>
-                    <p>Feel free to leave a message or email me.</p>
-                    <!--<p>I want to <strong>help people in need</strong>, <br><strong>protect the environment</strong>.</p>
-                    <p>I know it sounds empty, but it is my dream</p>-->
+                    <p>I am a computer science undergraduate at HKUST, interested in <strong>web developing</strong> and <strong>data analytics</strong>.</p>
+                    <p>Love adventure, exploring, making friends. Feel free to leave a message or email me.</p>
+                    <br>
+                    <p>I also appreciate every piece of advice from all of you. </p>
                 </div>
             </div>
         </div>
@@ -247,7 +92,7 @@
             </div>
                 <div class='col-md-4' >
                 <a href='http://www.ust.hk/'>
-                    <img src='/image/hkust.jpg' alt='hkust' class='exp-pic img-rounded' width=50% height=50%>
+                    <img src='/image/b-hkust.jpg' alt='hkust' class='exp-pic img-rounded' width=50% height=50%>
                     </a>
             </div>
                 <div class='col-md-8'>
@@ -256,37 +101,47 @@
                 <p class='exp-period'>2017-Present</p>
                 <p class='exp-location'>
                     <span class='fa fa-location-arrow'style='margin-right:8px;color:#0052cc;'></span>
-                    Hong Kong</p>             
-                    
+                    Hong Kong</p>               
             </div>
         </div>
-
         <br><br>
-            
         <div class='row'>
             <div class='col-md-4'>
-                <a href='https://sprout.tw/spt/'>
-                    <img src='/image/sprout.jpg' alt='sprout' class='exp-pic img-rounded'width=50% height=50%>
+                <br>
+                <a href='http://www.fg.tp.edu.tw/bin/home.php'>
+                    <img src='/image/tfg.jpg' alt='sprout' class='exp-pic img-rounded'width=65% height=100%>
                 </a>
             </div>
             <div class='col-md-8'>
                 <br>
-                <p class='exp-title'>Sprout Program -<br> Department of Computer Science and Information Engineering, National Taiwan University</p>
-                <p class='exp-job'>Python Graduate</p>
-                <p class='exp-period'>2014-2015</p>
+                <p class='exp-title'>Taipei First Girls High School</p>
+                <p class='exp-job'>Graduate</p>
+                <p class='exp-period'>2015-2017</p>
                 <p class='exp-location'><span class='fa fa-location-arrow'style='margin-right:8px;color:#0052cc;'></span>
                     Taipei, Taiwan</p>
                 
             </div>
-        </div>
-
+        </div>              
         <br><br><br><br>
-
-        
         <div class='row'>
-            <h3 class='exp-type'>Work/Internship</h3>
+            <h3 class='exp-type'>Work/Internship Experience </h3>
             <hr>    
         </div>
+        <div class='row'>
+            <div class='col-md-4'>
+                <a href='http://www.goodlab.hk/en/'>
+                    <img src='/image/thegoodlab.jpg' alt='thegoodlab' class='exp-pic img-rounded'width=50% height=50%>
+                </a>
+            </div>
+            <div class='col-md-8'>
+                <br>
+                <p class='exp-title'>The Good Lab </p>
+                <p class='exp-job'>Intern</p>
+                <p class='exp-period'>2018-Present</p>
+                <p class='exp-location'><span class='fa fa-location-arrow'style='margin-right:8px;color:#0052cc;'></span>
+                    Hong Kong</p>             
+            </div>
+    </div>
         <div class='row'>
                 <div class='col-md-4'>
                     <a href='https://www.giftviva.com/'>
@@ -338,40 +193,11 @@
     </div>
 
     <br><br>
-    <!--
-    <div class='bg-blog'>
-        <div class='container-fluid text-center' id='blog'>
-            <h2 class='title'>Blog</h2>
-        </div>
-        <div class='container text-center' id='blog'>
-            <div class='row'>
-            <hr>
-            <div class='col-sm-4'>
-                <div class='panel panel-info'>
-                    <div class='panel-heading'>Title</div>
-                    <div class='panel-body'>Content</div>
-                </div>
-            </div>
-            <div class='col-sm-4'>
-                    <h4>Title</h4>
-                    <p>Content</p>
-                    <h4>Title</h4>
-                    <p>Content</p>
-                    <h4>Title</h4>
-                    <p>Content</p>
-            </div>
-            <div class='col-sm-4'>
-                <div class='thumbnail'>hello</div>
-            </div>
-        </div>
-        </div>
-    </div>
-    -->
     <div class='bg-contact'>
         <div class='container-fluid text-center'id='contact'>
             <h2 class='title'>Contact</h2>
         </div>
-        <div class='container  text-center'id='contact'>
+        <div class='container container-last text-center'id='contact'>
             <div class='row'>
             <hr style='margin:0em 1em 0.5em;'>
             <div class='col-md-6'>
@@ -397,9 +223,25 @@
             </div>
         </div>    
         </div>
+
+<!-- Comment Box
         <div class='container container-last text-center' >
             <h4>Share with me</h4>
-            <!--<form method="POST" action="mailto:ting02940@gmail.com?SUBJECT=Questions for Jamie" enctype="text/plain">
+
+            
+
+                <form action='/m_adding_comment.php' method='POST' onsubmit='submit_comment()'>
+                Name: <input type='text' size='20' name='name' id='name'style='color:#08233a;'><br><br>
+                Comment: <br><textarea name='comment'id='comment' rows='5'cols='100' placeholder="Tell me anything"></textarea><br>
+                <input type='submit' value='Submit'name='submit'id='submit'style='background-color:#0b3457' onclick ='check()'>
+            </form>
+            <br><br>
+        -->
+        </div>
+    </div>
+  </body>
+</html>
+<!--<form method="POST" action="mailto:ting02940@gmail.com?SUBJECT=Questions for Jamie" enctype="text/plain">
                 <input type='text' maxlength="50" name='Name' style='color:#062F4F'></input>
                 <br><br>
                 <textarea rows='5'cols='100' placeholder="Tell me anything" id='comment'></textarea>
@@ -413,33 +255,3 @@
             <br><br>
             <button style='background-color:#0b3457' onclick='loadDoc()'type='submit'>Submit</button>
             <hr>-->
-
-
-            <form method='POST' action='/addmessage.php'name='comment'onsubmit='return check();'>
-                Name: <input type='text' size='20' name='name'><br><br>
-                Comment: <br><textarea name='content' rows='5'cols='100' placeholder="Tell me anything"></textarea><br>
-                <input type='submit' value='Submit'name='submit'style='background-color:#0b3457'>
-            </form>
-            <br><br>
-        </div>
-        
-    </div>
-
-  </body>
-</html>
-    <!--<script>
-    function loadDoc(){
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function(){
-            if(this.readyState==4&&this.status==200){
-                document.getElementById('document').innerHTML = this.responseText;
-            }
-        };
-        xhttp.open('GET',"/text.txt",true);
-        xhttp.send();
-    }
-    </script>-->
-<!--
-    submit_comment()/js
-    php/database
--->
